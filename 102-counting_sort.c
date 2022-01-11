@@ -9,6 +9,7 @@
 int catch_max(int *array, int size)
 {
 	int max, i;
+
 	for (max = array[0], i = 1; i < size; i++)
 	{
 		if (array[i] > max)
@@ -25,6 +26,7 @@ int catch_max(int *array, int size)
 void counting_sort(int *array, size_t size)
 {
 	int *sort, *coun, max, i;
+
 	if (array == NULL || size < 2)
 		return;
 	sort = malloc(sizeof(int) * size);
